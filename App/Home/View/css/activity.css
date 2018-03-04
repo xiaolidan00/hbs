@@ -1,0 +1,229 @@
+/* CSS Document */
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background:#FFF;
+	font-family:"Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+	font-size: 16px;
+	color: #000;
+	width:100%;
+	height:100%;
+}
+
+body.graybg {
+	background: #eee;
+}
+
+img.icon,input[type="image"].icon {
+	margin-left:8px;
+	width:16px;
+	height:12px;
+}
+
+input[type="image"].back,img.back {
+	float:left;
+	width:32px;
+	height:32px;
+}
+
+img.save,input[type="image"].save {
+	float:right;
+	width:32px;
+	height:32px;
+}
+
+input[type="text"].text1{
+	padding:4px;
+	width:10em;
+	border-radius: 5px;
+	border:1px solid gray;
+	margin:4px;
+}
+
+input[type="text"].text2{
+	padding:4px;
+	width:90%;
+	border-radius: 5px;
+	border:1px solid gray;
+	margin:4px;
+}
+
+input[type="file"].file1{
+	padding:4px;
+	width:90%;
+	background:#8000ff;
+	border-radius: 5px;
+	color:#FFF;
+	margin:4px;
+}
+
+input[type="submit"].bt1, input[type="button"].bt1 {
+	border-radius: 5px;
+	border: hidden;
+	background-color: #0CF;
+	color: #FFF;
+	width: 40%;
+	padding: 8px;
+	margin: 4px;
+}
+
+input[type="submit"].bt2, input[type="button"].bt2 {
+	border-radius: 5px;
+	border: hidden;
+	background-color: #ff8000;
+	color: #FFF;
+	width: 40%;
+	padding: 8px;
+	margin: 4px;
+}
+
+input[type="submit"].bt3, input[type="button"].bt3 {
+	border-radius: 5px;
+	border: hidden;
+	background-color: #0CF;
+	color: #FFF;
+	width: 4em;
+	padding: 8px;
+	margin: 4px;
+}
+
+select.select1{
+	border:0px;
+	box-shadow: 2px 2px 2px #888888;
+	padding:4px;
+}
+
+textarea.ta1{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: #FFF;
+	padding:4px;
+	margin:4px;
+}
+
+textarea.ta2{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: #FFF;
+	width:90%;
+	padding:4px;
+}
+
+textarea.ta3{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: #FFF;
+	height:200px;
+	width:100%;
+	padding:4px;
+	margin:4px;
+}
+
+a.title{
+	float: left;
+	margin-left: 18px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.active {
+
+	color:yellow;
+	text-decoration:underline;
+
+}
+
+a.atext{
+		background-color:#EEE;
+		color:#0080ff;
+		text-decoration:none;
+		}
+
+span.title {
+	float:left;
+	margin-left:36px;
+	font-weight:bold;
+	color:#FFF;
+	font-size:20px;
+}
+
+
+
+span.bluetext1 {
+	color:#099;
+	margin:0 4px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+}
+
+span.bluebg {
+	color:#FFF;
+	background-color:#06F;
+	padding:4px;
+}
+
+img.image1,input[type="image"].image1 {
+	width:144px;
+	height:120px;
+	padding:8px;
+}
+
+img.pic {
+	width:300px;
+	height:200px;
+	padding:8px;
+}
+
+
+
+div.part{
+	padding:4px;
+	background:#FFF;
+	float:left;
+	font-size:12px;
+	margin:4px;
+}
+
+div.top {
+	padding:8px;
+	height:36px;
+	background:#09F;
+	line-height:36px;
+	overflow:hidden;
+	text-align:center;
+}
+
+div.tranbg {
+	filter:alpha(opacticy=80);
+	opacity:0.8;
+	padding:8px;
+	background-color:#FFF;
+}
+
+div.content {
+	padding:16px;
+	background: url(../image/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+hr.line {
+	color:#099;
+	border:1px solid #099;
+	margin:0;
+	width:100%;
+}
+
+hr.line1 {
+	color:#03C;
+	border:1px solid #06F;
+	margin:0;
+	width:100%;
+}
+
+	

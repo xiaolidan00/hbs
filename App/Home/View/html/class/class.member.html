@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link href="__CSS__/class.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!--start of body top-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">成员管理</span>
+ 
+</div >
+<!--end of body top-->
+<div>
+<!--start of class top-->
+
+ <form action="./classMember" method="post">
+ <p><font color="gray" size="1%">修改和删除时，请对应勾选</font></p>
+<table >
+<tr>
+<th class="tdwidth">#  学号</td>
+<th class="tdwidth" background="purple">姓名</td>
+<th class="tdwidth">职位</td>
+</tr>
+<volist name="list" id="vo">
+<tr>
+<td ><input type="checkbox" name="stuid" value="{$vo.stuid}"/>{$vo.stuid}</td>
+<td class="tdwidth">{$vo.username}</td>
+
+<td class="tdwidth">
+<select name="kind" class="select" >
+<if condition="$vo.kind eq 1 ">
+	  <option value="1" selected="selected">班委</option>
+       <option value="0">同学</option>
+<else />
+<option value="1" >班委</option>
+<option value="0" selected="selected">同学</option>
+</if>
+</select>
+</td>
+
+</tr>
+</volist>
+
+</table>
+ <p><input class="bt1" type="submit" name="submit" value="修改" onclick="./classMember"/>
+ <input class="bt2" type="submit" name="submit" value="删除" onclick="./classMember" /></p>
+ </form>
+ </div>
+</body>
+</html>

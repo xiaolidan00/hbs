@@ -1,0 +1,977 @@
+[ 2017-05-21T15:16:06+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.045368s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.002329s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2017-05-21T15:18:27+08:00 ] 127.0.0.1 /index.php/Home/Index/showDiscuss?id=20170501001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.003400s ]
+SQL: SELECT * FROM `hbs_discuss` WHERE ( `id` = '20170501001' )  [ RunTime:0.055253s ]
+SQL: select hbs_user.username,hbs_comment.* 
+            from hbs_user,hbs_comment
+            where hbs_user.stuid=hbs_comment.uid AND hbs_comment.part='discuss' AND hbs_comment.pid='20170501001' [ RunTime:0.050866s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: hbs_kind E:\PHP\hbs\App\Runtime\Cache\Home\ff1e5673e7e390bd360d6bd5c916bbbe.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2017-05-21T15:18:30+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002301s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.003352s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-05-21T15:18:37+08:00 ] 127.0.0.1 /index.php/Home/Index/showDiscuss?id=20170429001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.001950s ]
+SQL: SELECT * FROM `hbs_discuss` WHERE ( `id` = '20170429001' )  [ RunTime:0.000416s ]
+SQL: select hbs_user.username,hbs_comment.* 
+            from hbs_user,hbs_comment
+            where hbs_user.stuid=hbs_comment.uid AND hbs_comment.part='discuss' AND hbs_comment.pid='20170429001' [ RunTime:0.004504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: hbs_kind E:\PHP\hbs\App\Runtime\Cache\Home\ff1e5673e7e390bd360d6bd5c916bbbe.php 第 13 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2017-05-21T15:18:40+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002614s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-05-21T21:26:35+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.008567s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2017-05-21T21:32:49+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.003456s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-05-21T21:33:03+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002810s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-05-21T21:33:04+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.003397s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-05-21T21:33:04+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002445s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003173s ]
+
+[ 2017-05-21T21:33:05+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002738s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2017-05-21T21:33:05+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.003839s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-05-21T21:33:05+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.003680s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.001536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2017-05-21T21:33:05+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002355s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001962s ]
+
+[ 2017-05-21T21:33:33+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004529s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.004533s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000998s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001826s ]
+
+[ 2017-05-21T21:34:49+08:00 ] 127.0.0.1 /index.php/Home/Index/showMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002681s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000447s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\e8b0cf170ddce96893ac97f568f5fcba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2017-05-21T21:34:51+08:00 ] 127.0.0.1 /index.php/Home/Activity/showActList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002206s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select hbs_activity.*,hbs_classes.claname
+            FROM hbs_activity,hbs_classes 
+            WHERE hbs_activity.class=hbs_classes.id [ RunTime:0.061273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Undefined index: hbs_kind E:\PHP\hbs\App\Runtime\Cache\Home\6a4114b517ca13df864f5ed6f7790dba.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2017-05-21T21:38:41+08:00 ] 127.0.0.1 /index.php/Home/User/showLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Undefined index: hbs_kind E:\PHP\hbs\App\Runtime\Cache\Home\63563aef607d801a9d00999b6c6c2fef.php 第 20 行.
+NOTIC: [8] Undefined variable: codeError E:\PHP\hbs\App\Runtime\Cache\Home\63563aef607d801a9d00999b6c6c2fef.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2017-05-21T21:38:42+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2017-05-21T21:40:56+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic?0.33570871701499927
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2017-05-21T21:40:57+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic?0.33180895410110867
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2017-05-21T21:40:58+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic?0.9716763503920369
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2017-05-21T21:40:59+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic?0.4381546076912268
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001988s ]
+
+[ 2017-05-21T21:41:11+08:00 ] 127.0.0.1 /index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.003365s ]
+SQL: SELECT * FROM `hbs_user` WHERE ( `stuid` = '2017081001' ) AND ( `password` = '123456' )  [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined index: hbs_kind E:\PHP\hbs\App\Runtime\Cache\Home\63563aef607d801a9d00999b6c6c2fef.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2017-05-21T21:41:11+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+
+[ 2017-05-21T21:41:32+08:00 ] 127.0.0.1 /index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002417s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.004034s ]
+SQL: SELECT * FROM `hbs_user` WHERE ( `stuid` = '2017081001' ) AND ( `password` = '12345678' )  [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: hbs_kind E:\PHP\hbs\App\Runtime\Cache\Home\63563aef607d801a9d00999b6c6c2fef.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2017-05-21T21:41:32+08:00 ] 127.0.0.1 /index.php/Home/User/verifyPic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002057s ]
+
+[ 2017-05-21T21:42:23+08:00 ] 127.0.0.1 /index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002891s ]
+SQL: SELECT * FROM `hbs_user` WHERE ( `stuid` = '2017081001' ) AND ( `password` = 'hbs123' )  [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2017-05-21T21:42:25+08:00 ] 127.0.0.1 /index.php/Home/User/showUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.003970s ]
+SQL: SELECT * FROM `hbs_user` WHERE ( `stuid` = '2017081001' )  [ RunTime:0.001011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-05-21T21:42:34+08:00 ] 127.0.0.1 /index.php/Home/Index/showMainM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.000922s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2017-05-21T21:42:45+08:00 ] 127.0.0.1 /index.php/Home/Classes/showClassEdit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.003501s ]
+SQL: SELECT * FROM `hbs_classes`  [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined variable: classError E:\PHP\hbs\App\Runtime\Cache\Home\97dd13920be9a6a47271529d7f8ab19e.php 第 27 行.
+NOTIC: [8] Undefined variable: time E:\PHP\hbs\App\Runtime\Cache\Home\97dd13920be9a6a47271529d7f8ab19e.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2017-05-21T21:43:09+08:00 ] 127.0.0.1 /index.php/Home/Index/showMainM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.000853s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2017-05-21T21:43:22+08:00 ] 127.0.0.1 /index.php/Home/Classes/showClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.002092s ]
+SQL: SELECT * FROM `hbs_classes` WHERE ( `id` = '2017gzucmcs' )  [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: class E:\PHP\hbs\App\Runtime\Cache\Home\71c978d6f8ff0bb5fee5791c1161df2b.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-21T21:43:25+08:00 ] 127.0.0.1 /index.php/Home/Index/showMainM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.001134s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.001104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-21T21:43:30+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.001969s ]
+SQL: SELECT * FROM `hbs_classes`  [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-05-21T21:43:32+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassDetail?id=2017gzucmcs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002265s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.003577s ]
+SQL: SELECT * FROM `hbs_classes` WHERE ( `id` = '2017gzucmcs' )  [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `hbs_activity` [ RunTime:0.002132s ]
+SQL: SELECT * FROM `hbs_activity` WHERE ( `class` = '2017gzucmcs' )  [ RunTime:0.000555s ]
+SQL: select hbs_user.username,hbs_comment.* 
+            from hbs_user,hbs_comment
+            where hbs_user.stuid=hbs_comment.uid AND hbs_comment.part='classes' AND hbs_comment.pid='2017gzucmcs' [ RunTime:0.003569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2017-05-21T21:43:42+08:00 ] 127.0.0.1 /index.php/Home/Index/showMainM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.001116s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2017-05-21T21:43:45+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.001171s ]
+SQL: SELECT * FROM `hbs_classes`  [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-05-21T21:43:49+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassDetail?id=2017gzucmmie
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.002673s ]
+SQL: SELECT * FROM `hbs_classes` WHERE ( `id` = '2017gzucmmie' )  [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `hbs_activity` [ RunTime:0.003311s ]
+SQL: SELECT * FROM `hbs_activity` WHERE ( `class` = '2017gzucmmie' )  [ RunTime:0.000466s ]
+SQL: select hbs_user.username,hbs_comment.* 
+            from hbs_user,hbs_comment
+            where hbs_user.stuid=hbs_comment.uid AND hbs_comment.part='classes' AND hbs_comment.pid='2017gzucmmie' [ RunTime:0.002341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2017-05-21T21:44:10+08:00 ] 127.0.0.1 /index.php/Home/Index/showMainM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_discuss` [ RunTime:0.002038s ]
+SQL: SELECT * FROM `hbs_discuss`  [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+NOTIC: [8] Undefined variable: good E:\PHP\hbs\App\Runtime\Cache\Home\3d87219bcc8c82e992e5a221f6802bb9.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2017-05-21T21:44:13+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002897s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.003965s ]
+SQL: SELECT * FROM `hbs_classes`  [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000698s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002395s ]
+
+[ 2017-05-21T21:44:15+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassDetail?id=2017gzucmcs1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.001973s ]
+SQL: SELECT * FROM `hbs_classes` WHERE ( `id` = '2017gzucmcs1' )  [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `hbs_activity` [ RunTime:0.002595s ]
+SQL: SELECT * FROM `hbs_activity` WHERE ( `class` = '2017gzucmcs1' )  [ RunTime:0.000583s ]
+SQL: select hbs_user.username,hbs_comment.* 
+            from hbs_user,hbs_comment
+            where hbs_user.stuid=hbs_comment.uid AND hbs_comment.part='classes' AND hbs_comment.pid='2017gzucmcs1' [ RunTime:0.003512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2017-05-21T21:44:21+08:00 ] 127.0.0.1 /index.php/Home/Activity/showClassDetail?id=2017gzucmcs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_classes` [ RunTime:0.001658s ]
+SQL: SELECT * FROM `hbs_classes` WHERE ( `id` = '2017gzucmcs' )  [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `hbs_activity` [ RunTime:0.001473s ]
+SQL: SELECT * FROM `hbs_activity` WHERE ( `class` = '2017gzucmcs' )  [ RunTime:0.001103s ]
+SQL: select hbs_user.username,hbs_comment.* 
+            from hbs_user,hbs_comment
+            where hbs_user.stuid=hbs_comment.uid AND hbs_comment.part='classes' AND hbs_comment.pid='2017gzucmcs' [ RunTime:0.000903s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+

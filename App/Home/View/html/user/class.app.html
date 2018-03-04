@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link href="__CSS__/user.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="top"> <!--start of 蓝色横条-->
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">加入班级</span>   
+  </div><!--end of 蓝色横条-->
+  <h2>{$msg}</h2>
+  <form action="./appClass" method="post">
+	<table>
+		<tr>
+			<td>班级：</td>
+			<td><select name="class" class="select1" >
+			<volist name="list" id="vo">
+			<option value="{$vo.id}">{$vo.claname}({$vo.id})</option>
+			</volist>
+			</select></td>
+		</tr>
+		<tr>
+		<td>申请理由：</td>
+		<td><textarea name="reason" class="ta1"></textarea></td>
+		</tr>
+	</table>
+	<p align="center"><input type="button" class="bt1" value="创建班级" onclick="location.href='__ROOT__/index.php/Home/Classes/showClassReg'"  />
+	<input type="submit" class="bt2" value="申请班级"  /></p>
+	</form>
+</body>
+</html>

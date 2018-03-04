@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/activity.css"  />
+</head>
+
+<body>
+<!--start of body top-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+
+ <span class="title">活动详情</span>
+</div >
+<!--end of body top-->
+
+<div class="content">
+<div class="tranbg">
+<center>
+<b>{$name}</b><br/>
+<img src="{$pic}" style="padding:4px;width:240px;height:180px;" />
+</center>
+
+<span class="bluetext1 ">活动类型</span> 
+
+<if condition="$kind eq 1">班级活动
+<elseif condition="$kind eq 2"/>团日活动
+<elseif condition="$kind eq 3"/>联谊活动
+<elseif condition="$kind eq 4"/>主题班会
+<elseif condition="$kind eq 5"/>其他
+</if>
+
+<hr class="line1"/>
+<br/>
+<span class="bluebg">活动地点</span>  {$address}
+<hr class="line1"/>
+<br/>
+
+<span class="bluetext1 ">活动时间</span> {$actime}
+<hr class="line1"/>
+
+<br/>
+
+<span class="bluebg">活动准备</span>
+<hr class="line1"/>
+{$actprepare}<br/>
+
+<br/>
+
+<span class="bluetext1">活动流程</span>
+<hr class="line1"/>
+{$actprocess}<br/>
+
+<br/>
+
+
+<span class="bluebg">注意事项</span>
+<hr class="line1"/>
+{$notice}<br/>
+
+<form action="./good" method="post">
+<div style="text-align:right;">
+<input type="hidden" name="id" value="{$id}"/>
+<input type="hidden" name="part" value="activity"/>
+<input type="image" src="__IMAGE__/good_on.png" class="icon" /><font color="red" size="1%">（{$good}）</font>
+</div>
+</form>
+<span class="bluetext1">评论</span>
+<hr class="line"/>
+
+<volist name="list" id="vo">
+
+<div style="padding:4px;margin-bottom:4px;">
+{$vo.username}:<font color="brown">{$vo.content}</font><br/>
+<div style="text-align:right;">
+<font color="gray" size="1%">{$vo.time}</font>
+<form action="./good" method="post">
+<input type="hidden" name="id" value="{$vo.id}"/>
+<input type="hidden" name="part" value="comment"/>
+<input type="image" src="__IMAGE__/good_on.png" class="icon"/><font color="red" size="1%">（{$vo.good}）</font>
+</form>
+</div>
+</div>
+</volist>
+
+</div>
+</div>
+<form action="./comment" method="post" >
+<input type="hidden" name="pid" value="{$id}"/>
+<input type="hidden" name="part" value="activity"/>
+<input type="text" name="content" style="border-radius: 5px;border:1px solid gray;padding:4px;width:75%;margin:4px;"/>
+<input type="submit" class="bt3" value="评论"/>
+</form>
+</body>
+</html>

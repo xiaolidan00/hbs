@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>好班手——找回密码</title>
+<link href="__CSS__/user.css" rel="stylesheet" />
+<script type="text/javascript" src="__JS__/register.js"></script>
+<script type="text/javascript">
+   	function changePic(){
+   		var verPic=document.getElementById("verPic");
+   		verPic.src="./verifyPic?"+Math.random();
+ 	}
+
+</script>
+</head>
+
+<body>
+	<!--start of 蓝色横条-->
+	<div class="top">
+		<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">修改密码</span>
+	</div>
+	<!--end of 蓝色横条-->
+	<form action="./forget" method="post">
+		<center>
+			<table>
+				<tr>
+					<td>学号<font color="red">*</font>：
+					</td>
+					<td><input type="text" class="text2" name="stuid" value="" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><font color="red" size="1%">{$stuidError}</font></td>
+				</tr>
+				<tr>
+					<td>姓名<font color="red">*</font>：
+					</td>
+					<td><input type="text" class="text2" id="name" name="username"
+						value="" onchange="checkName()" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><font id="nameError" color="red" size="1%"></font></td>
+				</tr>
+				<tr>
+					<td>班级：</td>
+					<td><input type="text" class="text1" name="class" value="" />
+						<font color="red">{$classError}</font></td>
+				</tr>
+				<tr>
+					<td>宿舍号：</td>
+					<td><input type="text" class="text1" name="room" value="" /></td>
+				</tr>
+				<tr>
+					<td>手机<font color="red">*</font>：
+					</td>
+					<td><input id="phone" type="text" class="text2" name="phone"
+						value="" onchange="checkPhone()" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><font id="phoneError" color="red" size="1%"></font></td>
+				</tr>
+				<tr>
+					<td>QQ：</td>
+					<td><input type="text" class="text1" name="qq" value="" /></td>
+				</tr>
+
+				<tr>
+					<td>微信号：</td>
+					<td><input type="text" class="text1" name="wechat" value="" /></td>
+				</tr>
+				<tr>
+					<td>新密码<font color="red">*</font>：
+					</td>
+					<td><input type="password" class="text2" name="password"
+						id="password" onchange="checkPass()" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><font id="pwdError" color="red" size="1%"></font></td>
+				</tr>
+				<tr>
+					<td>确认密码<font color="red">*</font>：
+					</td>
+					<td><input id="repassword" type="password" class="text2" name="repassword" onchange="checkRePass()"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><font id="repwdError" color="red" size="1%"></font></td>
+				</tr>
+				<tr>
+					<td>验证码：</td>
+					<td><input type="text" class="code" name="verify"> <img
+							id="verPic" align="absmiddle" src="./verifyPic"
+							style="height: 40px; width: 80px; border: 1px solid gray; line-height: 64px;"
+							onclick="changePic()" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><font color="red">{$codeError}</font></td>
+				</tr>
+			</table>
+			<p>
+				<input class="bt1" type="submit" name="forget" value="修改密码" />
+			</p>
+		</center>
+	</form>
+
+
+</body>
+</html>

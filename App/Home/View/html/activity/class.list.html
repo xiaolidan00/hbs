@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/activity.css"  />
+
+</head>
+
+<body class="graybg">
+<!--start of body top-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <a class="title" href="./showActList">活动IDEAS</a>
+ <a class="title active" href="./showClassList">班级联谊</a> 
+  <a class="title" href="./showRecList">活动回忆</a>
+</div >
+<!--end of body top-->
+<volist name="list" id="vo">
+<div class="part">
+<input type="hidden" name="id" value="{$vo.id}"/>
+<img src="{$vo.photo}" class="image1" onclick="location.href='__ROOT__/index.php/Home/Activity/showClassDetail?id={$vo.id}'"/><br/>
+<p align="center">{$vo.claname}
+<img src="__IMAGE__/good_on.png" class="icon" />
+<font color="red" >{$vo.good}</font> </p>
+</div>
+
+</volist>
+<img src="__IMAGE__/add.png" style="float:right;top:60px;"
+width="48" height="48" 
+onclick="location.href='__ROOT__/index.php/Home/Activity/showInvite'" />
+</body>
+</html>

@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	background:#FFF;
+	font-family:"Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+	font-size: 16px;
+	color: #000;
+}
+div.top{
+	padding:8px;
+	height:36px;
+	background:#09F;
+	line-height:36px;
+	overflow:hidden;
+	text-align:center;
+}
+
+span.title {
+	float:left;
+	margin-left:36px;
+	font-weight:bold;
+	color:#FFF;
+	font-size:20px;
+}
+
+input[type="image"].back,img.back {
+	float:left;
+	width:32px;
+	height:32px;
+}
+
+input[type="image"].save {
+	float:right;
+	width:32px;
+	height:32px;
+}
+
+input[type="submit"].bt1,input[type="button"].bt1 {
+	border-radius:5px;
+	border:hidden;
+	background-color:#0CF;
+	color:#FFF;
+	width:40%;
+	padding:8px;
+	margin:4px;
+}
+
+input[type="submit"].bt2, input[type="button"].bt2 {
+	border-radius: 5px;
+	border: hidden;
+	background-color: #ff8000;
+	color: #FFF;
+	width: 40%;
+	padding:8px;
+	margin:4px;
+}
+
+input[type="password"].text1,input[type="text"].text1 {
+	border:1px solid gray;
+	border-radius:5px;
+	padding:4px;
+	width:10em;
+}
+
+input[type="text"].code {
+	border:1px solid gray;
+	border-radius:5px;
+	padding:4px;
+	width:5em;
+}
+
+input[type="text"].code1 {
+	border:0px;
+	box-shadow: 2px 2px 2px #888888;
+	width:5em;
+	padding:4px;
+}
+
+input[type="password"].text2,input[type="text"].text2 {
+	border:0px;
+	box-shadow: 2px 2px 2px #888888;
+	width:10em;
+	padding:4px;
+}
+
+select.select1{
+	border:0px;
+	box-shadow: 2px 2px 2px #888888;
+	width:10em;
+	padding:4px;
+}
+
+select.select2{
+	border:0px;
+	box-shadow: 2px 2px 2px #888888;
+	width:5em;
+	padding:4px;
+}
+
+div.content {
+	background: url(../image/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+div.transp {
+	filter:alpha(opacticy=80);
+	opacity:0.8;
+	padding:8px 16px;
+	background-color:#FFF;
+}
+
+td.text1 {
+	background-color:#11264f;
+	padding:4px;
+	color:#FFF;
+}
+
+td.text2 {
+	background-color:#FFF;
+	padding:4px;
+	color:#11264f;
+}
+
+textarea.ta1{
+	border: 1px solid gray;
+	border-radius: 5px;
+	background-color: #FFF;
+	padding:4px;
+	margin:4px;
+}
+

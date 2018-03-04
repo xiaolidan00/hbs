@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>好班手</title>
+<link href="__CSS__/class.css" rel="stylesheet" />
+</head>
+
+<body class="graybg">
+
+	<form action="./classReg" method="post" enctype="multipart/form-data">
+		<div class="top">
+			<!--start of 蓝色横条-->
+			<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">班级注册</span>
+		</div>
+		<!--end of 蓝色横条-->
+
+		<div class="content1">
+			<!--start of 图片-->
+			<center>
+				<p><font color="#FFF">代号：</font>
+					<input type="text" class="text2" name="id" value="" /> <font
+						color="red" size="1%">{$idError}</font>
+				</p>
+				<p><font color="#FFF">班级：</font><input type="text" class="text2" name="claname" value=""/>
+ 				</p>			
+		<p><font color="#FFF">学校：</font><input type="text" class="text2" name="school" value=""/></p>
+		<p><font color="#FFF">学院：</font><input type="text" class="text2" name="college" value=""/></p>
+		<p><input type="text" class="text3" name="grade" value=""/>
+		<font color="#FFF">级</font>
+		<input type="text" class="text2" name="major" value=""/></p>
+		</div>			
+		</div>
+		</div>
+		<!--end of 图片-->
+		<div class="part">
+			<p class="subtitle">
+				<img src="__IMAGE__/sun.png" class="icon" /> <span class="subtitle">
+					班级简介 </span>
+			</p>
+			<textarea name="summery" class="ta1"></textarea>
+		</div>
+
+		<div class="part">
+			<p class="subtitle">
+				<img src="__IMAGE__/sun.png" class="icon" /> <span class="subtitle">
+					考勤奖励 </span>
+			</p>
+			<textarea name="rewards" class="ta1"></textarea>
+		</div>
+		
+		<center>
+			<input type="submit" class="bt1" value="注册班级" />
+		</center>
+	</form>
+</body>
+</html>

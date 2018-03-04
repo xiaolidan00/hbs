@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/attend.css"  />
+</head>
+
+<body class="graybg">
+<!--start of body top-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">请假记录</span>
+</div >
+<!--end of body top-->
+<volist name="list" id="vo">
+<div class="part">
+<p>从:<font color="brown" size="1%">{$vo.start}</font></p>
+<p>到:<font color="brown" size="1%">{$vo.end}</font></p>
+<p>理由：<font color="gray">{$vo.reason}</font></p>
+<p>状态:<font color="brown" size="1%"><if condition="$vo.status eq 1">批准
+<elseif condition="$vo.status eq 0"/>未回复
+<elseif condition="$vo.status eq -1" />不批
+</if></font></p>
+<p><font color="gray" size="1%">申请时间:{$vo.time}</font></p>
+</div>
+</volist>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/class.css"  />
+</head>
+<body>
+<center><img src="__IMAGE__/icon.png"/><br/>
+<span style="font-size:24px;">{$msg}</span><br/>
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<input type="button" class="bt1" value="返回首页" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';">
+<php>}else{</php>
+
+<input type="button" class="bt1" value="返回首页" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';">
+<php>}</php>
+<input type="button" class="bt1" value="跳转到班级详情" onclick="location.href='__ROOT__/index.php/Home/Classes/showClass';">
+
+ </center>
+</body>
+</html>

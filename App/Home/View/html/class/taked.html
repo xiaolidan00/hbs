@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手——参加过的活动</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/class.css"  />
+</head>
+
+<body class="graybg">
+<!--start of 蓝色横条-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">参加过的活动</span>
+</div >
+<!--end of 蓝色横条-->
+
+<div class="part" >
+<img src="__IMAGE__/good_on.png" class="icon"/>{$claname}<span class="redtext">活动总获赞（{$good}）</span>
+</div>
+<volist name="list" id="vo">
+<div class="part" >
+<table style="width:100%;">
+<tr>
+<td>
+<span class="bluetext" >{$vo.name}</span><br/>
+<font color="gray" size="1%">{$vo.time}</font><br/>
+<img src="__IMAGE__/good_on.png" class="icon" />
+<font color="red" size="1%" >{$vo.good}</font>
+</td>
+<td style="text-align:right;">
+<img src="{$vo.pic}" class="pic1" onclick="location.href='__ROOT__/index.php/Home/Activity/showActDetail?id={$vo.id}'"/>
+</td>
+</tr>
+</table>
+</div>
+</volist>
+
+</body>
+</html>

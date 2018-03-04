@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>邀请函</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/activity.css"  />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+
+
+
+<body>
+<!--start of body top-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">邀请函</span>
+</div >
+<!--end of body top-->
+
+<div class="content">
+<center><span class="bluebg">邀请函</span></center>
+
+
+<div class="tranbg border">
+<p>
+受邀班级:
+{$invclass}
+</p>
+<p>
+联谊时间:
+{$actime}
+</p>
+<center>
+<span class="bluetext1 textleft">邀请内容</span>
+<hr class="line"/>
+</center>
+{$content}<br/>
+
+<p align="right"><font color="gray" size="1%">{$time}</font></p>
+
+<div></div>
+<p>负责人:
+<font color="brown">{$username}</font>
+</p>
+
+<p>
+联系电话:
+<font color="brown">{$phone}</font>
+</p>
+<p>
+邀请班级
+<font color="brown">{$myclass}</font>
+</p>
+<a href="./showActDetail?id={$actid}">活动详情</a>
+<br/>
+<if condition="$ans eq true">
+<form action="./actInvAnswer" method="post">
+<input type="hidden" name="id" value="{$id}"/>
+回复：<input type="radio" name="status" value="1"/>接受
+<input type="radio" name="status" value="-1"/>拒绝
+<input type="submit" class="bt1" value="提交"/>
+</form>
+</if>
+</div>
+</div>
+</body>
+</html>

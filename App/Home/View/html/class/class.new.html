@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link href="__CSS__/class.css" rel="stylesheet"/>
+</head>
+
+<body class="graybg">
+<!--start of body top-->
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">新成员</span>
+</div >
+<!--end of body top-->
+<div>
+<!--start of class top-->
+
+<volist name="list" id="vo">
+ <form action="./classNew" method="post">
+<div class="part">
+<p>{$vo.username}<input type="hidden" name="id" value="{$vo.id}"/></p>
+<p>学号：{$vo.uid}<input type="hidden" name="uid" value="{$vo.uid}"/></p>
+<p>理由：{$vo.reason}</p>
+<p><font color="gray" size="1%">{$vo.time}</font></p>
+<p style="text-align:right;">   
+<input type="submit" class="bt2" name="submit" value="允许"/>
+<input type="submit" class="bt1" name="submit" value="拒绝" />
+</p>
+</div>
+ </form>
+</volist>
+
+ </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>好班手</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/activity.css"  />
+
+</head>
+<body>
+<center>
+<div class="top"> 
+<php>
+if($_COOKIE['hbs_kind']==1){</php>
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMainM';"/>
+<php>}else{</php>
+
+<img class="back" src="__IMAGE__/back.png" onclick="location.href='__ROOT__/index.php/Home/Index/showMain';"/>
+<php>}</php>
+ <span class="title">资料上传</span>
+</div >
+<form action="./classUpload" method="post" enctype="multipart/form-data" >
+<span class="bluetext1">课程表图片</span>
+   <hr class="line"/>
+   <br/>
+   <p><input type="file" class="file1" name="pic1"/></p>
+   
+   <span class="bluetext1">班级图片</span>
+   <hr class="line"/>
+    <p><input type="file" class="file1" name="pic2"/></p>        
+      <br/>
+           </center>
+           <input type="submit" class="bt1" value="上传"/> 
+           </form>
+</body>
+</html>

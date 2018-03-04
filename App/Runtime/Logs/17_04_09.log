@@ -1,0 +1,290 @@
+[ 2017-04-09T15:23:50+08:00 ] 127.0.0.1 /hbs/index.php/Home/User/showUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined variable: username F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 30 行.
+NOTIC: [8] Undefined variable: gender F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 35 行.
+NOTIC: [8] Undefined variable: phone F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 44 行.
+NOTIC: [8] Undefined variable: qq F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 48 行.
+NOTIC: [8] Undefined variable: wechat F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 53 行.
+NOTIC: [8] Undefined variable: kind F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 57 行.
+NOTIC: [8] Undefined variable: class F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 65 行.
+NOTIC: [8] Undefined variable: id F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 69 行.
+NOTIC: [8] Undefined variable: room F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 73 行.
+NOTIC: [8] Undefined variable: province F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 78 行.
+NOTIC: [8] Undefined variable: city F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 79 行.
+NOTIC: [8] Undefined variable: attend F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 84 行.
+NOTIC: [8] Undefined variable: leave F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 88 行.
+NOTIC: [8] Undefined variable: score F:\PHP\hbs\App\Runtime\Cache\Home\a4adc3f4d9387169e689e336da0b6435.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2017-04-09T15:24:17+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: list F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2017-04-09T15:25:30+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002988s ]
+SQL: SELECT `id`,`username`,`class` FROM `hbs_user`  [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: id F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 30 行.
+NOTIC: [8] Undefined index: name F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 31 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+NOTIC: [8] Undefined index: id F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 30 行.
+NOTIC: [8] Undefined index: name F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 31 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+NOTIC: [8] Undefined index: id F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 30 行.
+NOTIC: [8] Undefined index: name F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 31 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2017-04-09T15:27:05+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.004505s ]
+SQL: SELECT `id`,`username`,`class` FROM `hbs_user`  [ RunTime:0.000670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: name F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 31 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+NOTIC: [8] Undefined index: name F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 31 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+NOTIC: [8] Undefined index: name F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 31 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2017-04-09T15:27:57+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.001935s ]
+SQL: SELECT `id`,`username`,`class` FROM `hbs_user`  [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-04-09T16:00:20+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002516s ]
+SQL: SELECT `id`,`username`,`class` FROM `hbs_user`  [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 35 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 35 行.
+NOTIC: [8] Undefined index: gender F:\PHP\hbs\App\Runtime\Cache\Home\5121900e00c7857a40019b2241c9b852.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001554s ]
+
+[ 2017-04-09T20:28:46+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.003028s ]
+NOTIC: [8] Undefined variable: class F:\PHP\hbs\App\Home\Controller\ClassesController.class.php 第 16 行.
+SQL: SELECT `id`,`username`,`kind` FROM `hbs_user` WHERE ( `class` = null )  [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2017-04-09T20:28:48+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002579s ]
+NOTIC: [8] Undefined variable: class F:\PHP\hbs\App\Home\Controller\ClassesController.class.php 第 16 行.
+SQL: SELECT `id`,`username`,`kind` FROM `hbs_user` WHERE ( `class` = null )  [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-04-09T20:29:05+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002086s ]
+NOTIC: [8] Undefined variable: class F:\PHP\hbs\App\Home\Controller\ClassesController.class.php 第 16 行.
+SQL: SELECT `id`,`username`,`kind` FROM `hbs_user` WHERE ( `class` = null )  [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-04-09T20:29:06+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.001879s ]
+NOTIC: [8] Undefined variable: class F:\PHP\hbs\App\Home\Controller\ClassesController.class.php 第 16 行.
+SQL: SELECT `id`,`username`,`kind` FROM `hbs_user` WHERE ( `class` = null )  [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2017-04-09T22:07:18+08:00 ] 127.0.0.1 /hbs/index.php/Home/Classes/showMember
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead F:\PHP\hbs\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hbs_user` [ RunTime:0.002194s ]
+NOTIC: [8] Undefined variable: class F:\PHP\hbs\App\Home\Controller\ClassesController.class.php 第 23 行.
+SQL: SELECT `id`,`username`,`kind` FROM `hbs_user` WHERE ( `class` = null )  [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+

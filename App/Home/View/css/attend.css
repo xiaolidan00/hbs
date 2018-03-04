@@ -1,0 +1,192 @@
+/* CSS Document */
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background:#FFF;
+	font-family:"Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;
+	font-size: 16px;
+	color: #000;
+}
+
+body.graybg {
+	background: #eee;
+}
+
+input[type="image"].back,img.back {
+	float:left;
+	width:32px;
+	height:32px;
+}
+
+span.title {
+	float:left;
+	margin-left:36px;
+	font-weight:bold;
+	color:#FFF;
+	font-size:20px;
+}
+
+span.title1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+	color:#8080ff;
+}
+
+a.a1{
+	float:right;
+	text-decoration:none;
+	color:#FFF;
+	}
+
+hr{
+	border:3px solid #8080ff; 
+	color:#8080ff;
+}
+
+th.head{
+	background:#8080ff;
+	color:#FFF;
+}
+
+input[type="submit"].bt1, input[type="button"].bt1 {
+	border-radius: 5px;
+	border: hidden;
+	background-color: #0CF;
+	color: #FFF;
+	width: 40%;
+	padding: 8px;
+	margin: 4px;
+}
+
+input[type="submit"].bt2, input[type="button"].bt2 {
+	border-radius: 5px;
+	border: hidden;
+	background-color: #ff8040;
+	color: #FFF;
+	width: 40%;
+	padding: 8px;
+	margin: 4px;
+}
+
+input[type="time"].text1,input[type="date"].text1 {
+	border: 0px;
+	box-shadow: 2px 2px 2px #888888;
+	width: 10em;
+	padding: 4px;
+}
+
+input[type="submit"].btcircile {
+	border:hidden;
+	background:#8080ff;
+	color:#FFF;
+	width:80px;
+	height:80px;
+	text-align:center;
+	border-radius:40px;
+}
+
+div.bg1{
+	background:#8080ff;
+	color:#FFF;
+	padding:4px;
+}
+
+div.top {
+	padding:8px;
+	height:36px;
+	background:#09F;
+	line-height:36px;
+	overflow:hidden;
+	text-align:center;
+}
+
+div.part {
+	background: #ffffff;
+	margin-bottom: 8px;
+	padding:8px;
+}
+
+textarea.ta1{
+	border: 1px solid gray;
+	border-radius: 5px;
+	width:90%;	
+	background-color: #FFF;
+	padding:4px;
+}
+
+select.select1 {
+	border: 0px;
+	box-shadow: 2px 2px 2px #888888;
+	width: 6em;
+	padding: 4px;
+}
+
+.roa{
+	animation: myfirst 3s;
+-moz-animation: myfirst 3s;	/* Firefox */
+-webkit-animation: myfirst 3s;	/* Safari 和 Chrome */
+-o-animation: myfirst 3s;
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+	
+}
+.roa1 {
+	animation: myfirst1 3s;
+-moz-animation: myfirst1 3s;	/* Firefox */
+-webkit-animation: myfirst1 3s;	/* Safari 和 Chrome */
+-o-animation: myfirst1 3s;
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;nt:infinite;
+	
+}
+
+@keyframes myfirst
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+@-o-keyframes myfirst1 /* Opera */
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(-360deg);}
+}
+@keyframes myfirst1
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(-360deg);}
+}
+
+@-moz-keyframes myfirst1 /* Firefox */
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(-360deg);}
+}
+
+@-webkit-keyframes myfirst1 /* Safari 和 Chrome */
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(-360deg);}
+}
+
+@-o-keyframes myfirst1 /* Opera */
+{
+from {transform:rotate(0deg);}
+to {transform:rotate(-360deg);}
+}
+
